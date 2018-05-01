@@ -29,7 +29,7 @@ env:
     - SYMFONY_VERSION=4.0.x
 
 matrix:
-    fast_failure: truematrix:
+    fast_failure: true
     include:
         - php: 5.3
           dist: precise
