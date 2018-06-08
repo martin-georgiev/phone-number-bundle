@@ -27,6 +27,7 @@ env:
     - SYMFONY_VERSION=3.3.x
     - SYMFONY_VERSION=3.4.x
     - SYMFONY_VERSION=4.0.x
+    - SYMFONY_VERSION=4.1.x
 
 matrix:
     fast_failure: true
@@ -37,6 +38,8 @@ matrix:
     exlude:
         - php: 5.3
           env: SYMFONY_VERSION=4.0.x
+        - php: 5.3
+          env: SYMFONY_VERSION=4.1.x
         - php: 5.4
           env: SYMFONY_VERSION=3.0.x
         - php: 5.4
@@ -49,12 +52,20 @@ matrix:
           env: SYMFONY_VERSION=3.4.x
         - php: 5.4
           env: SYMFONY_VERSION=4.0.x
+        - php: 5.4
+          env: SYMFONY_VERSION=4.1.x
         - php: 5.5
           env: SYMFONY_VERSION=4.0.x
+        - php: 5.5
+          env: SYMFONY_VERSION=4.1.x
         - php: 5.6
           env: SYMFONY_VERSION=4.0.x
+        - php: 5.6
+          env: SYMFONY_VERSION=4.1.x
         - php: 7.0
           env: SYMFONY_VERSION=4.0.x
+        - php: 7.0
+          env: SYMFONY_VERSION=4.1.x
     allow_failures:
         - php: hhvm
         - php: nightly
